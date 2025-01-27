@@ -141,9 +141,12 @@
   }
 
   .u-section-1 .u-text-2 {
-    margin-top: 33px;
+    margin-top: 50px;
   }
 } .u-section-2 {
+margin-top: 70px;
+
+border-radius: 20px;
   background-image: url("images/Screenshot_8.png");
   background-position: 50% 50%;
 }
