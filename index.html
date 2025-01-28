@@ -1,318 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt">
-
+<html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <link rel="icon" href="images/coracao.ico" type="image/x-icon">
-    <title>Te amo</title>
+    <title>Exemplo de Seções</title>
     <style>
-        /* Resetting margin and padding for all elements */
-        * {
+        /* Reseta algumas propriedades */
+        body, h1, p {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
 
-        /* Base styles for the sections */
-        .u-section-1,
-        .u-section-2 {
-            padding: 0 20px;
+        /* Define a margem para o corpo da página */
+        body {
+            margin: 20px;
         }
 
-        .u-section-1 {
-            min-height: 887px;
+        /* Estilos comuns para todas as seções */
+        section {
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
 
-        .u-section-1 .u-shape-1 {
-            width: 80%;
-            height: 291px;
-            background-image: none;
-            margin: 433px auto 0;
+        /* Primeira seção com fundo branco */
+        .secao-1 {
+            background-color: white;
+            border: 2px solid #ccc;
         }
 
-        .u-section-1 .u-layout-wrap-1 {
-            width: 1140px;
-            margin: -634px auto 60px;
+        /* Segunda seção com fundo rosa */
+        .secao-2 {
+            background-color: pink;
+            border: 2px solid #e91e63;
         }
 
-        .u-section-1 .u-layout-cell-1 {
-            min-height: 706px;
+        /* Caixas de texto com opacidade diferente */
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
         }
 
-        .u-section-1 .u-container-layout-1 {
-            padding: 30px;
+        .input-opacity-1 {
+            opacity: 1;
         }
 
-        .u-section-1 .u-text-1 {
-            margin: 0;
+        .input-opacity-2 {
+            opacity: 0.7;
         }
 
-        .u-section-1 .u-text-2 {
-            font-size: 1.25rem;
-            margin: 30px 0 0;
+        .input-opacity-3 {
+            opacity: 0.5;
         }
 
-        /* Section 2 styles */
-        .u-section-2 {
-            margin-top: 70px;
-            border-radius: 20px;
-            background-image: url("images/Screenshot_8.png");
-            background-position: center;
-            background-size: cover;
-        }
-
-        .u-section-2 .u-sheet-1 {
-            min-height: 893px;
-        }
-
-        .u-section-2 .u-group-1 {
-            width: 468px;
-            min-height: 457px;
-            margin: 71px auto 0;
-            background-image: none;
-        }
-
-        .u-section-2 .u-container-layout-1 {
-            padding: 30px 50px;
-        }
-
-        .u-section-2 .u-text-1 {
-            font-weight: 700;
-            font-family: "Playfair Display", serif;
-            font-size: 3rem;
-            margin: 0;
-        }
-
-        .u-section-2 .u-text-2 {
-            font-weight: 400;
-            font-size: 1rem;
-            margin: -19px 0 0;
-        }
-
-        .u-section-2 .u-text-3 {
-            font-size: 1rem;
-            margin: 30px auto 0;
-        }
-
-        .u-section-2 .u-group-2 {
-            width: 191px;
-            min-height: 250px;
-            margin: 0 auto;
-        }
-
-        .u-section-2 .u-container-layout-2 {
-            padding-top: 23px;
-            padding-bottom: 16px;
-        }
-
-        /* Media Queries for responsiveness */
-        @media (max-width: 1199px) {
-            .u-section-1 {
-                min-height: 702px;
+        /* Responsividade */
+        @media (max-width: 600px) {
+            body {
+                margin: 10px;
             }
 
-            .u-section-1 .u-shape-1 {
-                width: 80%;
-                height: 284px;
-                margin-top: 418px;
+            section {
+                padding: 15px;
             }
 
-            .u-section-1 .u-layout-wrap-1 {
-                width: 940px;
-                margin-top: -666px;
-            }
-
-            .u-section-1 .u-layout-cell-1 {
-                min-height: 582px;
-            }
-
-            .u-section-2 .u-sheet-1 {
-                min-height: 736px;
-            }
-
-            .u-section-2 .u-group-1 {
-                width: 433px;
-                height: auto;
-            }
-
-            .u-section-2 .u-container-layout-1 {
-                padding-left: 40px;
-                padding-right: 40px;
-            }
-
-            .u-section-2 .u-text-1 {
-                font-size: 2.75rem;
-            }
-
-            .u-section-2 .u-group-2 {
-                width: 433px;
-                height: auto;
-            }
-
-            .u-section-2 .u-container-layout-2 {
-                padding-left: 40px;
-                padding-right: 40px;
-            }
-        }
-
-        @media (max-width: 991px) {
-            .u-section-1 {
-                min-height: 678px;
-            }
-
-            .u-section-1 .u-shape-1 {
-                width: 80%;
-                height: 279px;
-                margin-top: 399px;
-            }
-
-            .u-section-1 .u-layout-wrap-1 {
-                width: 720px;
-                margin-top: -618px;
-            }
-
-            .u-section-1 .u-layout-cell-1 {
-                min-height: 558px;
-            }
-
-            .u-section-1 .u-container-layout-1 {
-                padding-right: 0;
-            }
-
-            .u-section-2 .u-sheet-1 {
-                min-height: 564px;
-            }
-
-            .u-section-2 .u-group-1 {
-                width: 326px;
-                margin-top: 29px;
-            }
-
-            .u-section-2 .u-container-layout-1 {
-                padding-left: 30px;
-                padding-right: 30px;
-            }
-
-            .u-section-2 .u-text-1 {
-                font-size: 2.25rem;
-            }
-
-            .u-section-2 .u-group-2 {
-                width: 326px;
-                margin-top: 29px;
-            }
-
-            .u-section-2 .u-container-layout-2 {
-                padding-left: 30px;
-                padding-right: 30px;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .u-section-2 {
-                background-position: 16.91% 100%;
-                background-size: auto 115%;
-            }
-
-            .u-section-2 .u-sheet-1 {
-                min-height: 423px;
-            }
-
-            .u-section-2 .u-group-1 {
-                width: 270px;
-                margin-bottom: 48px;
-            }
-
-            .u-section-2 .u-container-layout-1 {
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-
-            .u-section-2 .u-group-2 {
-                width: 270px;
-                margin-bottom: 48px;
-            }
-
-            .u-section-2 .u-container-layout-2 {
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-        }
-
-        @media (max-width: 575px) {
-            .u-section-2 {
-                background-position: 50% 50%;
-                background-size: auto 130%;
-            }
-
-            .u-section-2 .u-sheet-1 {
-                min-height: 1910px;
-            }
-
-            .u-section-2 .u-group-1 {
-                width: 191px;
-                min-height: 278px;
-                margin-top: 44px;
-                margin-bottom: 0;
-            }
-
-            .u-section-2 .u-container-layout-1 {
-                padding: 23px 10px 16px;
-            }
-
-            .u-section-2 .u-text-1 {
-                font-size: 1.875rem;
-                width: 91px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .u-section-2 .u-text-2 {
-                font-weight: 700;
-                font-size: 1.5rem;
-                width: auto;
-                margin-left: 10px;
-                margin-right: 10px;
-            }
-
-            .u-section-2 .u-text-3 {
-                width: auto;
-                font-size: 1.5rem;
-                margin-top: 68px;
-            }
-
-            .u-section-2 .u-group-2 {
-                min-height: 1476px;
-                margin-top: -1464px;
-                margin-bottom: 60px;
-                width: auto;
-            }
-
-            .u-section-2 .u-container-layout-2 {
-                padding-left: 10px;
-                padding-right: 10px;
+            input[type="text"] {
+                padding: 8px;
             }
         }
     </style>
 </head>
-
 <body>
-    <section class="u-clearfix u-section-1" id="sec-2131">
-        <div class="u-align-right u-palette-1-light-2 u-shape u-shape-rectangle u-shape-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750"></div>
-        <div class="custom-expanded data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-1">
-            <div class="u-layout">
-                <div class="u-layout-row">
-                    <div class="u-container-align-left-lg u-container-align-left-md u-container-align-left-sm u-container-align-left-xl u-container-style u-layout-cell u-size-60 u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-                        <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-1">
-                            <h2 class="u-align-left u-text u-text-1" style="margin-top: 50px;">LUISA<br></h2>
-                            <p class="u-align-left u-large-text u-text u-text-variant u-text-2">Luisa, cada vez que penso em você, meu coração acelera e minha alma sorri. Sua presença é como um raio de sol que ilumina os meus dias mais sombrios...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+    <!-- Primeira Seção -->
+    <section class="secao-1">
+        <h1>Título da Primeira Seção</h1>
+        <p>Este é um exemplo de texto na primeira seção. O fundo é branco e o texto é bem legível.</p>
+        <input type="text" class="input-opacity-1" placeholder="Caixa de texto 1 com opacidade 1">
     </section>
-    <section class="u-
+
+    <!-- Segunda Seção -->
+    <section class="secao-2">
+        <h1>Título da Segunda Seção</h1>
+        <p>Esta é a segunda seção com fundo rosa. O contraste é um pouco diferente.</p>
+        <input type="text" class="input-opacity-2" placeholder="Caixa de texto 2 com opacidade 0.7">
+        <input type="text" class="input-opacity-3" placeholder="Caixa de texto 3 com opacidade 0.5">
+    </section>
+
+</body>
+</html>
