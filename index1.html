@@ -141,11 +141,57 @@
             animation-duration: 4s;
             animation-delay: 4s;
         }
+
+        /* Estilo do slider */
+        .slider-container {
+            position: relative;
+            max-width: 800px;
+            margin-top: 40px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .slider-images {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+
+        .slider-images img {
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
     <!-- Chuva de ícones -->
     <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+<div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+<div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+<div class="icon">❤️</div>
     <div class="icon">❤️</div>
     <div class="icon">❤️</div>
     <div class="icon">❤️</div>
@@ -171,5 +217,31 @@
             Você me faz muito bem, e eu estou disposto a construir com você, algo incrível, surreal, espetacular, assim como você.<br>
         </p>
     </div>
+
+    <!-- Slider de imagens -->
+    <div class="slider-container">
+        <div class="slider-images">
+            <img src="images/foto1.jpg" alt="Foto 1">
+            <img src="images/foto2.jpg" alt="Foto 2">
+            <img src="images/foto3.jpg" alt="Foto 3">
+            <img src="images/foto4.jpg" alt="Foto 4">
+            <img src="images/foto5.jpg" alt="Foto 5">
+            <img src="images/foto6.jpg" alt="Foto 6">
+        </div>
+    </div>
+
+    <script>
+        // Slider automático
+        let currentIndex = 0;
+        const images = document.querySelector('.slider-images');
+        const totalImages = images.children.length;
+
+        function slide() {
+            currentIndex = (currentIndex + 1) % totalImages;
+            images.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        setInterval(slide, 3000); // Muda a imagem a cada 3 segundos
+    </script>
 </body>
 </html>
