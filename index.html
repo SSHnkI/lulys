@@ -63,7 +63,7 @@
         <h2>Data do pedido?</h2>
         <form id="loginForm" onsubmit="return verificarNumero()">
             <div class="input-group">
-                <input type="text" id="username" placeholder="se errar a página se autodestroi" required>
+                <input type="text" id="username" placeholder="Se errar 2, a página se autodestroi" required>
             </div>
             <button type="submit">Entrar</button>
             <p id="error-message" class="error"></p>
@@ -74,11 +74,11 @@
         function verificarNumero() {
             var numero = document.getElementById('username').value;
             if (numero === '09012025') {
-                window.location.href = 'index1.html'; // Redireciona para index1.html
-                return false; // Impede o envio do formulário
+                window.location.href = 'index1.html'; 
+                return false; 
             } else {
-                document.getElementById('error-message').textContent = 'Número inválido!'; // Mostra erro na página
-                return false; // Impede o envio do formulário
+                document.getElementById('error-message').textContent = 'Número inválido!'; 
+                return false; 
             }
         }
     </script>
