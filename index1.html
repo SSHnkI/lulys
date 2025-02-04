@@ -5,97 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mensagem p neneca</title>
     <link rel="icon" href="images/coracao.ico" type="image/x-icon">
-    <link rel="stylesheet" href="index1.css" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <style>
-        /* Estilos para a seção */
-        .u-section-1 {
-            background-image: linear-gradient(to bottom, #f08df2, #db545a);
-            background-position: center;
-            background-size: cover;
+        /* Resetando o estilo padrão */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .u-section-1 .u-sheet-1 {
-            min-height: 1185px;
+        /* Definindo o estilo geral do body */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #f08df2, #db545a);
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             padding: 20px;
         }
 
-        .u-section-1 .u-text-1 {
-            margin: 89px auto 0;
-            font-size: 32px;
-            color: white;
+        /* Estilo do container do texto */
+        .message-container {
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
-        .u-section-1 .u-text-2 {
-            width: 826px;
-            margin: 71px auto 60px;
-            font-size: 20px;
+        /* Estilo do título */
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        /* Estilo do parágrafo de texto */
+        p {
+            font-size: 1.2em;
             line-height: 1.6;
-            color: white;
-            text-align: justify;
+            margin-bottom: 20px;
         }
 
-        /* Media Queries */
-        @media (max-width: 1199px) {
-            .u-section-1 .u-sheet-1 {
-                min-height: 977px;
-            }
-        }
-
-        @media (max-width: 991px) {
-            .u-section-1 .u-sheet-1 {
-                min-height: 748px;
+        /* Media query para responsividade */
+        @media (max-width: 600px) {
+            .message-container {
+                padding: 20px;
             }
 
-            .u-section-1 .u-text-2 {
-                width: 720px;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .u-section-1 .u-sheet-1 {
-                min-height: 561px;
+            h1 {
+                font-size: 2em;
             }
 
-            .u-section-1 .u-text-2 {
-                width: 540px;
-            }
-        }
-
-        @media (max-width: 575px) {
-            .u-section-1 {
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            .u-section-1 .u-sheet-1 {
-                min-height: 353px;
-            }
-
-            .u-section-1 .u-text-2 {
-                width: 340px;
+            p {
+                font-size: 1em;
             }
         }
     </style>
-
 </head>
 <body>
-    <section class="u-align-center u-border-2 u-border-grey-75 u-clearfix u-container-align-center u-gradient u-parallax u-section-1" id="block-2">
-        <div class="u-clearfix u-sheet u-sheet-1">
-            <h1 class="u-align-center u-text u-text-default u-title u-text-1">Neneca</h1>
-            <p class="u-align-center u-large-text u-text u-text-variant u-text-2">
-                Meu amor,<br>
-                sempre que te vejo, fico babando em você, adoro te ter ao lado, sentir seu abraço, seu cheiro, ter seus beijos.<br>
-                Quando saímos a primeira vez, já tinha algo em meu coração que dizia que era você.<br>
-                Quero que saiba que eu te amo demais, mais do que eu imaginava ser possível amar alguém.<br>
-                Conhecer você foi a melhor coisa do meu 2024, e ter você como minha namorada é a maior felicidade que eu poderia ter.<br>
-                Você consegue melhorar meu dia só com uma mensagem.<br>
-                Fico muito feliz em te fazer feliz, te ver sorrir e aguentar suas chatices.<br>
-                Você me fez ver a vida com mais cores, muito mais feliz, pensar em você me faz rir sozinho.<br>
-                Fico o dia inteiro pensando em você, em nós dois.<br>
-                Você me faz muito bem, e eu estou disposto a construir com você, algo incrível, surreal, espetacular, assim como você.<br>
-            </p>
-        </div>
-    </section>
+    <div class="message-container">
+        <h1>Neneca</h1>
+        <p>
+            Meu amor,<br>
+            sempre que te vejo, fico babando em você, adoro te ter ao lado, sentir seu abraço, seu cheiro, ter seus beijos.<br>
+            Quando saímos a primeira vez, já tinha algo em meu coração que dizia que era você.<br>
+            Quero que saiba que eu te amo demais, mais do que eu imaginava ser possível amar alguém.<br>
+            Conhecer você foi a melhor coisa do meu 2024, e ter você como minha namorada é a maior felicidade que eu poderia ter.<br>
+            Você consegue melhorar meu dia só com uma mensagem.<br>
+            Fico muito feliz em te fazer feliz, te ver sorrir e aguentar suas chatices.<br>
+            Você me fez ver a vida com mais cores, muito mais feliz, pensar em você me faz rir sozinho.<br>
+            Fico o dia inteiro pensando em você, em nós dois.<br>
+            Você me faz muito bem, e eu estou disposto a construir com você, algo incrível, surreal, espetacular, assim como você.<br>
+        </p>
+    </div>
 </body>
 </html>
+
