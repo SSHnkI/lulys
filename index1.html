@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mensagem para Neneca</title>
     <link rel="icon" href="images/coracao.ico" type="image/x-icon">
+    
+    <!-- Importando a fonte Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
     <style>
+        /* Resetando o estilo padrão */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        /* Definindo o estilo geral do body */
         body {
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(to bottom, #f08df2, #db545a);
@@ -24,9 +29,10 @@
             text-align: center;
             padding: 20px;
             position: relative;
-            flex-direction: column;
+            flex-direction: column; /* Adicionado para empilhar os elementos */
         }
 
+        /* Estilo do container do texto */
         .message-container {
             max-width: 800px;
             width: 100%;
@@ -35,9 +41,10 @@
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             z-index: 10;
-            margin-bottom: 40px;
+            margin-bottom: 40px; /* Adicionando espaço entre a mensagem e o slider */
         }
 
+        /* Estilo do título */
         h1 {
             font-size: 2.5em;
             margin-bottom: 20px;
@@ -45,12 +52,14 @@
             color: #fff;
         }
 
+        /* Estilo do parágrafo de texto */
         p {
             font-size: 1.2em;
             line-height: 1.6;
             margin-bottom: 20px;
         }
 
+        /* Slider Container */
         .slider-container {
             position: relative;
             max-width: 800px;
@@ -60,27 +69,137 @@
             overflow: hidden;
         }
 
+        /* As imagens dentro do slider */
         .slider-images {
             display: flex;
             transition: transform 1s ease-in-out;
         }
 
         .slider-images img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;  /* Ajusta a imagem sem cortar e sem distorcer, preservando as proporções */
+            width: 100%;  /* Garante que a imagem ocupe toda a largura do container */
+            height: 100%; /* Ajusta a altura proporcionalmente */
+            object-fit: contain;  /* Ajusta as imagens sem cortar e sem distorcer, mantendo as proporções */
+        }
+
+        /* Ajustes para dispositivos móveis */
+        @media (max-width: 600px) {
+            .message-container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .slider-container {
+                max-width: 100%;
+                margin-top: 20px;
+            }
+        }
+
+        /* Estilo da chuva de ícones */
+        .icon {
+            position: absolute;
+            top: -50px;
+            font-size: 40px;
+            color: #ff66b2;
+            opacity: 0;
+            animation: fall 5s linear infinite;
+        }
+
+        /* Animação de queda dos ícones */
+        @keyframes fall {
+            0% {
+                top: -50px;
+                opacity: 1;
+            }
+            100% {
+                top: 100vh;
+                opacity: 0;
+            }
+        }
+
+        .icon:nth-child(1) {
+            left: 10%;
+            animation-duration: 4s;
+            animation-delay: 0s;
+        }
+        .icon:nth-child(2) {
+            left: 20%;
+            animation-duration: 5s;
+            animation-delay: 1s;
+        }
+        .icon:nth-child(3) {
+            left: 30%;
+            animation-duration: 6s;
+            animation-delay: 2s;
+        }
+        .icon:nth-child(4) {
+            left: 40%;
+            animation-duration: 4.5s;
+            animation-delay: 0.5s;
+        }
+        .icon:nth-child(5) {
+            left: 50%;
+            animation-duration: 6s;
+            animation-delay: 3s;
+        }
+        .icon:nth-child(6) {
+            left: 60%;
+            animation-duration: 4s;
+            animation-delay: 1.5s;
+        }
+        .icon:nth-child(7) {
+            left: 70%;
+            animation-duration: 5s;
+            animation-delay: 2.5s;
+        }
+        .icon:nth-child(8) {
+            left: 80%;
+            animation-duration: 6s;
+            animation-delay: 3.5s;
+        }
+        .icon:nth-child(9) {
+            left: 90%;
+            animation-duration: 4s;
+            animation-delay: 4s;
         }
     </style>
 </head>
 <body>
+    <!-- Chuva de ícones -->
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+
+    <!-- Container de mensagem -->
     <div class="message-container">
         <h1>Neneca</h1>
         <p>
-            Meu amor, sempre que te vejo, fico babando em você...<br>
-            (restante do conteúdo da mensagem)
+            Meu amor,<br>
+            sempre que te vejo, fico babando em você, adoro te ter ao lado, sentir seu abraço, seu cheiro, ter seus beijos.<br>
+            Quando saímos a primeira vez, já tinha algo em meu coração que dizia que era você.<br>
+            Quero que saiba que eu te amo demais, mais do que eu imaginava ser possível amar alguém.<br>
+            Conhecer você foi a melhor coisa do meu 2024, e ter você como minha namorada é a maior felicidade que eu poderia ter.<br>
+            Você consegue melhorar meu dia só com uma mensagem.<br>
+            Fico muito feliz em te fazer feliz, te ver sorrir e aguentar suas chatices.<br>
+            Você me fez ver a vida com mais cores, muito mais feliz, pensar em você me faz rir sozinho.<br>
+            Fico o dia inteiro pensando em você, em nós dois.<br>
+            Você me faz muito bem, e eu estou disposto a construir com você, algo incrível, surreal, espetacular, assim como você.<br>
         </p>
     </div>
 
+    <!-- Slider de imagens -->
     <div class="slider-container">
         <div class="slider-images">
             <img src="images/ft1.jpeg" alt="Foto 1">
