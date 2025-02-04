@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensagem p neneca</title>
+    <title>Mensagem para Neneca</title>
     <link rel="icon" href="images/coracao.ico" type="image/x-icon">
+    
+    <!-- Importando a fonte Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <style>
@@ -26,6 +28,8 @@
             align-items: center;
             text-align: center;
             padding: 20px;
+            overflow: hidden; /* Para esconder ícones fora da tela */
+            position: relative;
         }
 
         /* Estilo do container do texto */
@@ -36,6 +40,7 @@
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 10;
         }
 
         /* Estilo do título */
@@ -67,9 +72,90 @@
                 font-size: 1em;
             }
         }
+
+        /* Estilo da chuva de ícones */
+        .icon {
+            position: absolute;
+            top: -50px;
+            font-size: 40px;
+            color: #ff66b2;
+            opacity: 0;
+            animation: fall 5s linear infinite;
+        }
+
+        /* Animação de queda dos ícones */
+        @keyframes fall {
+            0% {
+                top: -50px;
+                opacity: 1;
+            }
+            100% {
+                top: 100vh;
+                opacity: 0;
+            }
+        }
+
+        /* Variando as posições dos ícones */
+        .icon:nth-child(1) {
+            left: 10%;
+            animation-duration: 4s;
+            animation-delay: 0s;
+        }
+        .icon:nth-child(2) {
+            left: 20%;
+            animation-duration: 5s;
+            animation-delay: 1s;
+        }
+        .icon:nth-child(3) {
+            left: 30%;
+            animation-duration: 6s;
+            animation-delay: 2s;
+        }
+        .icon:nth-child(4) {
+            left: 40%;
+            animation-duration: 4.5s;
+            animation-delay: 0.5s;
+        }
+        .icon:nth-child(5) {
+            left: 50%;
+            animation-duration: 6s;
+            animation-delay: 3s;
+        }
+        .icon:nth-child(6) {
+            left: 60%;
+            animation-duration: 4s;
+            animation-delay: 1.5s;
+        }
+        .icon:nth-child(7) {
+            left: 70%;
+            animation-duration: 5s;
+            animation-delay: 2.5s;
+        }
+        .icon:nth-child(8) {
+            left: 80%;
+            animation-duration: 6s;
+            animation-delay: 3.5s;
+        }
+        .icon:nth-child(9) {
+            left: 90%;
+            animation-duration: 4s;
+            animation-delay: 4s;
+        }
     </style>
 </head>
 <body>
+    <!-- Chuva de ícones -->
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+    <div class="icon">❤️</div>
+
+    <!-- Container de mensagem -->
     <div class="message-container">
         <h1>Neneca</h1>
         <p>
@@ -87,4 +173,3 @@
     </div>
 </body>
 </html>
-
