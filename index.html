@@ -78,7 +78,7 @@
             // Verifica se o username é o esperado
             if (username === "10012025") {
                 window.location.href = "index1.html"; // Redireciona para a página home.html
-                return false; // Impede o envio do formulário
+                return true; // Impede o envio do formulário
             } else {
                 errorMessage.textContent = "Usuário ou senha inválidos.";
                 setTimeout(() => {
