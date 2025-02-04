@@ -65,26 +65,18 @@
             <div class="input-group">
                 <input type="text" id="username" placeholder="se errar a pagina se autodestroi" required>
             </div>
-            <button type="submit">Entrar</button>
+            <button onclick="verificarNumero()" type="submit">Entrar</button>
             <p id="error-message" class="error"></p>
         </form>
     </div>
 
     <script>
-        function validateForm() {
-            const username = document.getElementById('username').value;
-            const errorMessage = document.getElementById('error-message');
-
-            // Verifica se o username é o esperado
-            if (username === "10012025") {
-                window.location.href = "index1.html"; // Redireciona para a página home.html
-                return true; // Impede o envio do formulário
+       function verificarNumero() {
+            var numero = document.getElementById('numero').value;
+            if (numero === '09012025') {
+                window.location.href = 'index1.html'; // Redireciona para index1.html
             } else {
-                errorMessage.textContent = "Usuário ou senha inválidos.";
-                setTimeout(() => {
-                    window.location.reload(); // Reinicia a página após 5 segundos
-                }, 5000);
-                return false; // Impede o envio do formulário
+                alert('Número inválido!');
             }
         }
     </script>
